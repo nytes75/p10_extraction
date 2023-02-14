@@ -10,4 +10,4 @@ P10 is a monthly field book weather stations use to record variables like, tempe
 There are field books from around the 1900s from multiple stations that needs to be digitized. This can be exausting especially if you have other daily tasks to work on.
 
 ## Way around this
-Coding a python script to extract written data from to field books is one option for the lazy people, programmers.
+Coding a python script to extract written data from the P10 field books is one option for the lazy people, programmers.
