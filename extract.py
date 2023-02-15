@@ -7,6 +7,7 @@ import os
 
 template_path = "data/img/template/20230214_131608.jpg"
 raw_images_path = "data/img/monthly/august/20230214_132258.jpg"
+img_ref = cv2.imread(template_path)
 
 def display(im_path):
     dpi = 80
@@ -33,4 +34,6 @@ def rotateImage(cvImage, angle: float):
     newImage = cv2.warpAffine(newImage, M, (w, h), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REPLICATE)
     return newImage
 
-display(template_path)
+invert_img = cv2.bitwise_not(img_ref)
+cv2.imwrite("data/img/template/temp/inverted_template.jpg", invert_img)
+display("data/img/template/temp/inverted_template.jpg")
